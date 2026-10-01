@@ -6,9 +6,9 @@ for i in range(n):
     a = input()
     if a != 'error':
         a = float(a)
-        sr += a
         if a > threshold:
             cnt += 1
+        sr += a
         if a > mx:
             mx = a
     else:
@@ -17,4 +17,4 @@ print(n)
 print(er_cnt)
 print(cnt)
 print(f'{mx:.1f}')
-print(f'{(sr/n):.1f}')
+print(f'{(sr/n-er_cnt):.1f}')
