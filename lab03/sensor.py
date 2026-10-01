@@ -14,3 +14,9 @@ for i in range(n):
             mx = a
     else:
         er_cnt += 1
+print('Вывод')
+print(n)
+print(er_cnt)
+print(cnt)
+print(f'{mx:.1f}')
+print(f'{sr/n:.1f}')
