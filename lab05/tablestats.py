@@ -38,6 +38,13 @@ def total_minutes(rows, kind):
                 continue
     return round(total,1)
 
+def to_csv(counts):
+    output = 'тип,количество\n'
+    all_types = list(counts.keys())
+    all_types.sort()
+    for kind in all_types:
+        output += kind + ',' + str(counts[kind]) + '\n'
+    return output
 
 
 
