@@ -20,9 +20,8 @@ def common(first :list, second: list) -> list:
     return sorted(common)
 
 def only_in_first(first: list, second: list) -> list:
-    only_in_second = []
+    only_in_first_list = []
     for a in first:
-        for b in second:
-            if a in first and b not in first and a not in second:
-                only_in_second.append(a)
-    return sorted(only_in_second)
+        if a not in second and a not in only_in_first_list:
+            only_in_first_list.append(a)
+    return sorted(only_in_first_list)
